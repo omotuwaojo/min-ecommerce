@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart MIN</title>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .cart-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .cart-header {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .products-section {
+            flex: 2;
+        }
+        .cart-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .cart-table th {
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+            color: #8c8989;
+            font-weight: lighter;
+        }
+        .cart-table th:nth-child(2),
+        .cart-table th:nth-child(3),
+        .cart-table th:nth-child(4) {
+            text-align: right;
+        }
+        .cart-table td {
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+            vertical-align: middle;
+        }
+
+        /* Product column */
+        .product-cell {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .remove-product {
+            color: #a19f9f;
+            text-decoration: none;
+            font-size: 12px;
+            margin-right: 5px;
+            border: 2px solid #969292;
+            border-radius: 50%;
+            padding: 1px 5px;
+        }
+        .product-thumbnail {
+            width: 60px;
+        }
+        .product-thumbnail img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .product-name {
+            font-weight: normal;
+        }
+        .product-name a {
+            color: #4e5572;
+            text-decoration: none;
+        }
+        .product-name a:hover {
+            color: #333;
+        }
+
+        
+        /* Align price columns */
+        .product-price {
+            font-weight: 600;
+            text-align: right;
+        }
+        .product-quantity {
+            text-align: right;
+        }
+        .quantity-control {
+            display: inline-flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            padding: 3px;
+            justify-content: center;
+            margin-left: auto;
+        }
+        .quantity-btn {
+            background-color: #f5f5f5;
+            border: none;
+            font-size: 12px;
+            padding: 8px 10px;
+            cursor: pointer;
+        }
+        .quantity-input {
+            width: 30px;
+            text-align: center;
+            border: none;
+            font-size: 16px;
+        }
+        .product-subtotal {
+            font-weight: bold;
+            text-align: right;
+        }
+
+        /* Cart totals section */
+        .cart-totals {
+            flex: 1;
+            background-color: #f9f9f9;
+            
+            border: 1px solid #f3efef;
+            height: fit-content;
+            overflow: hidden;
+        }
+        .cart-totals h3 {
+            margin-top: 0;
+            padding: 2px 20px;
+            color: #666;
+            font-size: 1.2em;
+            font-weight: 540;
+        }
+
+        .totals-table {
+            width: 100%;
+            margin-bottom: 0;
+            border-collapse: collapse;
+            border-top: 1px solid #eeeaea;
+        }
+
+        .totals-table tr {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            position: relative; 
+        }
+
+        
+        .totals-table tr:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 20px;
+            right: 20px;
+            height: 1px;
+            box-shadow: 0 1px 3px rgba(107, 12, 12, 0.1);
+        }
+
+        .totals-table tr td:first-child {
+            text-align: left;
+            font-weight: normal;
+            color: #555;
+        }
+
+        .totals-table tr td:last-child {
+            text-align: right;
+            font-weight: lighter;
+            font-size: 1.1em;
+        }
+
+        /* Shipping details styling */
+        .shipping-details {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 10px;
+        }
+
+        .shipping-method {
+            font-weight: lighter;
+            color: #666;
+        }
+
+        .shipping-address {
+            font-size: 0.85em;
+            color: #666;
+        }
+
+        .change-address {
+            font-size: 0.85em;
+            color: #798ea4;
+            text-decoration: none;
+        }
+        .change-address:hover {
+            color: #4e5572;
+        }
+
+        /* Total row styling */
+        .totals-table tr:last-child {
+            background-color: #f0f0f0;
+            border-top: 1px solid #c9c6c6;
+        }
+
+        .totals-table tr:last-child td {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        /* Price values styling */
+        .price-value {
+            font-weight: bold;
+            color: #222;
+        }
+        .checkout-button {
+            background-color: black;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            width: 95%;
+            margin-left: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .cart-actions {
+            margin-top: 10px;
+            width: 100%;
+        }
+        .continue-shopping {
+            display: inline-block;
+            padding: 8px 20px;
+            background-color: #f5f5f5;
+            color: #333;
+            text-decoration: none;
+            border: 2px solid black;
+            font-weight: 600;
+        }
+        .continue-shopping:hover {
+            background-color: black;
+            color: white;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .update-cart {
+            display: inline-block;
+            padding: 8px 20px;
+            background-color: #5d5f60;
+            color: white;
+            text-decoration: none;
+            border: none;
+            margin-left: 10px;
+        }
+        .payment-options {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .payment-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px;
+            background: black;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 98%;
+            margin-left: 20px;
+            transition: all 0.2s ease;
+        }
+        .buy {
+            gap: 5px;
+            font-size: 14px;
+            font-weight: normal;
+            color: white;
+        }
+        .payment-btn:hover {
+            background: #5c5b5b;
+        }
+        .coupon-section {
+            margin-top: 20px;
+            padding: 2px 20px;
+        }
+        .coupon-input {
+            width: 99%;
+            /* margin-left: 20px; */
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 1px;
+            margin-top: 10px;
+        }
+        .Apply {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .Apply-btn {
+            display: block;
+            width: 95%;
+            margin-left: 20px;
+            padding: 12px;
+            margin-bottom: 10px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 1px;
+            font-weight: lighter;
+            font-size: 14px;
+            color: #8e8b8b;
+            cursor: pointer;
+            
+        }
+        .Apply-btn:hover {
+            background-color: #f0f0f0;
+            transition: background-color 0.3s ease;
+        }
+        .fas{
+            color: #b4b2b2;
+            font-size: 20px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cart-container">
+        <div class="products-section">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>PRODUCT</th>
+                        <th>PRICE</th>
+                        <th>QUANTITY</th>
+                        <th>SUBTOTAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="product-cell">
+                                <a href="#" class="remove-product">×</a>
+                                <div class="product-thumbnail">
+                                    <img src="./images/3-copy-1-800x800.jpeg" alt="Product Image">
+                                </div>
+                                <div class="product-name"><a href="#">3-Way Black Sling Bag</a></div>
+                            </div>
+                        </td>
+                        <td class="product-price">RM189.00</td>
+                        <td class="product-quantity">
+                            <div class="quantity-control">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="text" class="quantity-input" value="1" readonly>
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                        </td>
+                        <td class="product-subtotal">RM189.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="cart-actions">
+                <a href="#" class="continue-shopping">← CONTINUE SHOPPING</a>
+                <a href="#" class="update-cart">UPDATE CART</a>
+            </div>
+        </div>
+
+        <div class="cart-totals">
+            <h3>CART TOTALS</h3>
+            <table class="totals-table">
+                <tr>
+                    <td>Subtotal</td>
+                    <td class="price-value">RM189.00</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>
+                        <div class="shipping-details">
+                            <span class="shipping-method">Free shipping</span>
+                            <span class="shipping-address">Shipping to Kuala Lumpur.</span>
+                            <a href="#" class="change-address">Change address</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td class="price-value">RM189.00</td>
+                </tr>
+            </table>
+            <a href=""><button class="checkout-button">PROCEED TO CHECKOUT</button></a>
+            <div class="payment-options">
+                <button class="payment-btn">
+                    <span class="buy">Buy with</span>
+                    <img src="https://www.gstatic.com/instantbuy/svg/dark_gpay.svg" alt="Google Pay" style="height: 17px; margin-right: 5px; margin-top: -2px;">
+                    
+                </button>
+            </div>
+            <div class="coupon-section">
+                 <div><i class="fas fa-tag"></i> Coupon</div>
+                <input type="text" class="coupon-input" placeholder="Coupon code">
+            </div>
+            <div class="Apply">
+                <button class="Apply-btn">Apply Coupon</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Quantity controls functionality
+        document.querySelectorAll('.quantity-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const input = this.parentElement.querySelector('.quantity-input');
+                let quantity = parseInt(input.value);
+                
+                if (this.classList.contains('plus')) {
+                    quantity++;
+                } else if (this.classList.contains('minus') && quantity > 1) {
+                    quantity--;
+                }
+                
+                input.value = quantity;
+                updateProductSubtotal(this.closest('tr'));
+                updateCartTotals();
+            });
+        });
+
+        // Remove product functionality
+        document.querySelectorAll('.remove-product').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                this.closest('tr').remove();
+                updateCartTotals();
+            });
+        });
+
+        // Update individual product subtotal
+        function updateProductSubtotal(row) {
+            const price = parseFloat(row.querySelector('.product-price').textContent.replace('RM', ''));
+            const quantity = parseInt(row.querySelector('.quantity-input').value);
+            const subtotal = (price * quantity).toFixed(2);
+            row.querySelector('.product-subtotal').textContent = 'RM' + subtotal;
+        }
+
+        // Update cart totals
+        function updateCartTotals() {
+            let subtotal = 0;
+            document.querySelectorAll('.product-subtotal').forEach(el => {
+                subtotal += parseFloat(el.textContent.replace('RM', ''));
+            });
+            
+            document.querySelectorAll('.price-value').forEach(el => {
+                el.textContent = 'RM' + subtotal.toFixed(2);
+            });
+        }
+    </script>
+</body>
+</html>
