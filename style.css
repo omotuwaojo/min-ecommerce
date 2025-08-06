@@ -10,6 +10,13 @@
   max-height: 400px;
 }
 
+.container .my-5{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+  color: red;
+}
+
 .carousel-overlay {
   position: absolute;
   top: 0;
@@ -48,6 +55,30 @@
   }
 }
 
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-content {
+  animation: scroll-left 30s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-content > div {
+  min-width: 200px;
+  text-align: center;
+}
+
 
 /* Responsive Services Layout */
 .services-row div {
@@ -72,7 +103,8 @@ html[data-theme="dark"] footer {
   top: 0;
   width: 260px;
   height: 100%;
-  background: #fff;
+  background: black;
+  color: white;
   z-index: 1050;
   transition: left 0.3s ease;
 }
@@ -94,4 +126,64 @@ html[data-theme="dark"] footer {
 .category-header {
   flex-direction: row-reverse;
   justify-content: space-between;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer-link:hover {
+  color: #ffc107; /* Bootstrap warning color */
+  transform: translateX(5px);
+}
+
+.social-icon {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s, transform 0.3s;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #ffc107;
+  transform: scale(1.2);
+}
+
+.section-heading {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.section-heading::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: red;
+  margin-top: 5px;
+}
+
+.product-title {
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.product-title:hover {
+  color: #ffc107;
+  transform: translateX(3px);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  transition: transform 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
 }

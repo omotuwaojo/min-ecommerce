@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -22,11 +22,11 @@
   <div class="container d-flex align-items-center justify-content-between flex-wrap">
     <div class="d-flex align-items-center">
       <button class="btn btn-light d-lg-none me-2" id="hamburger"><i class="fas fa-bars"></i></button>
-      <h3 class="mb-0 fw-bold">Market<span class="text-warning">kit</span></h3>
+      <a href="#"><h3 class="mb-0 fw-bold text-white text-decoration-none">Market<span class="text-warning">kit</span></h3></a>
     </div>
     <br><br>
-    <nav class="d-none d-lg-flex gap-3 align-items-center">
-      <a href="#"><i class="fas fa-home"></i></a>
+    <nav class="d-none d-lg-flex gap-4 align-items-center">
+      <i class=""></i></a>
       <a href="#"><i class="fas fa-store"></i></a>
       <a href="#"><i class="fas fa-file"></i></a>
       <a href="#"><i class="fas fa-blog"></i></a>
@@ -52,11 +52,14 @@
     <h5 class="mb-0">Menu</h5>
     <button id="close-sidebar" class="btn btn-sm btn-dark">&times;</button>
   </div>
-  <ul class="list-unstyled px-3">
-    <li><a href="#"><i class="fas fa-home me-2"></i>Home</a></li>
-    <li><a href="#"><i class="fas fa-store me-2"></i>Shop</a></li>
-    <li><a href="#"><i class="fas fa-file me-2"></i>Pages</a></li>
-    <li><a href="#"><i class="fas fa-blog me-2"></i>Blog</a></li>
+  <ul class="list-unstyled px-3 text-decoration-none">
+    <li><a href="#"><i class="fas fa-home me-3"></i>HOME</a></li>
+    <br>
+    <li><a href="#"><i class="fas fa-store me-3"></i>SHOP</a></li>
+    <br>
+    <li><a href="#"><i class="fas fa-file me-3"></i>PAGES</a></li>
+    <br>
+    <li><a href="#"><i class="fas fa-blog me-3"></i>BLOG</a></li>
   </ul>
 </div>
 <div id="overlay" class="overlay"></div>
@@ -67,7 +70,7 @@
     <!-- Slide 1 -->
     <div class="carousel-item active">
       <div class="carousel-image-container">
-        <img src="./generators-inverters_300x300.png" class="d-block w-100" alt="Generators and Inverters">
+        <img src="./images/appliances.png" class="d-block w-100" alt="Generators and Inverters">
         <div class="carousel-overlay">
           <div class="carousel-caption-center text-white text-center">
             <h1 class="display-4 fw-bold">WELCOME TO MARKETKIT</h1>
@@ -81,7 +84,7 @@
     <!-- Slide 2 -->
     <div class="carousel-item">
       <div class="carousel-image-container">
-        <img src="./sneakers_300x300.png" class="d-block w-100" alt="Sneakers">
+        <img src="./images/HP LAPTOP.jpeg" class="d-block w-100" alt="Sneakers">
         <div class="carousel-overlay">
           <div class="carousel-caption-center text-white text-center">
             <h1 class="display-5 fw-bold">STEP INTO STYLE</h1>
@@ -95,51 +98,1283 @@
 </div>
 
 <!-- Category Carousels -->
-<section class="container py-5">
-  <div id="categories">
-    <!-- Reusable category block -->
+<section class="container my-5">
+      
+ <div class="container my-5">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h4 class="text-bold text-danger">TOP CATEGORIES</h4>
+    <a href="#" class="btn btn-outline-primary btn-sm">View All</a>
+  </div>
+  <div class="d-flex flex-row gap-3 overflow-auto">
+    <!-- Product Cards -->
+    <!-- Repeat this block for each product -->
+    <!-- You can use a loop if working with a backend -->
+    <!-- Product 1 to 20 -->
+    <!-- BEGIN CARDS -->
+    <!-- Example card, copy and paste for 20 -->
+    <!-- Replace image URL or text as needed -->
+    <!-- START LOOP -->
+    <!-- You may replace this with server-side or JS loop -->
+    <!-- Example for demonstration -->
+    <!-- CARD TEMPLATE -->
+    <!-- Copy the next block 20 times and update accordingly -->
+
+        <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="./images/watches-sunglasses_300x300.png" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="./images/UNKNOWN.jpeg" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+
+ <div class="d-flex justify-content-between align-items-center mb-3">
+  <h3 class="fw-bold">
+   Office
+  </h3>
+  <a class="btn btn-outline-primary btn-sm" href="office.html">
+   View All
+  </a>
+ </div>
+ <div class="carousel slide" data-bs-ride="carousel" id="officeCarousel">
+  <div class="carousel-inner">
+   <div class="carousel-item active">
+    <div class="row row-cols-2 row-cols-md-4 g-3">
+     <div class="col">
+      <div class="card h-100 position-relative" data-name="Ergonomic Office Chair">
+       <span class="badge bg-danger position-absolute top-0 start-0 m-2">
+        -20%
+       </span>
+       <img alt="Ergonomic Office Chair" class="card-img-top" src="./images/office/office-chair.jpg"/>
+       <div class="card-body">
+        <h6 class="card-title">
+         Ergonomic Office Chair
+        </h6>
+        <p class="card-text mb-1">
+         <span class="text-muted text-decoration-line-through">
+          竄ｦ40,000
+         </span>
+         <span class="fw-bold text-primary ms-2">
+          竄ｦ32,000
+         </span>
+        </p>
+        <button class="btn btn-sm btn-success w-100">
+         Add to Cart
+        </button>
+       </div>
+      </div>
+     </div>
+     <div class="col">
+      <div class="card h-100 position-relative">
+       <span class="badge bg-danger position-absolute top-0 start-0 m-2">
+        -20%
+       </span>
+       <img alt="LED Desk Lamp" class="card-img-top" src="./images/office/lamp.jpg"/>
+       <div class="card-body">
+        <h6 class="card-title">
+         LED Desk Lamp
+        </h6>
+        <p class="card-text mb-1">
+         <span class="text-muted text-decoration-line-through">
+          竄ｦ10,000
+         </span>
+         <span class="fw-bold text-primary ms-2">
+          竄ｦ8,000
+         </span>
+        </p>
+        <button class="btn btn-sm btn-success w-100">
+         Add to Cart
+        </button>
+       </div>
+      </div>
+     </div>
+     <div class="col">
+      <div class="card h-100 position-relative">
+       <span class="badge bg-danger position-absolute top-0 start-0 m-2">
+        -17%
+       </span>
+       <img alt="Filing Cabinet" class="card-img-top" src="./images/office/filing-cabinet.jpg"/>
+       <div class="card-body">
+        <h6 class="card-title">
+         Filing Cabinet
+        </h6>
+        <p class="card-text mb-1">
+         <span class="text-muted text-decoration-line-through">
+          竄ｦ18,000
+         </span>
+         <span class="fw-bold text-primary ms-2">
+          竄ｦ15,000
+         </span>
+        </p>
+        <button class="btn btn-sm btn-success w-100">
+         Add to Cart
+        </button>
+       </div>
+      </div>
+     </div>
+     <div class="col">
+      <div class="card h-100 position-relative">
+       <span class="badge bg-danger position-absolute top-0 start-0 m-2">
+        -16%
+       </span>
+       <img alt="Wooden Work Desk" class="card-img-top" src="./images/office/work-desk.jpg"/>
+       <div class="card-body">
+        <h6 class="card-title">
+         Wooden Work Desk
+        </h6>
+        <p class="card-text mb-1">
+         <span class="text-muted text-decoration-line-through">
+          竄ｦ50,000
+         </span>
+         <span class="fw-bold text-primary ms-2">
+          竄ｦ42,000
+         </span>
+        </p>
+        <button class="btn btn-sm btn-success w-100">
+         Add to Cart
+        </button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#officeCarousel" type="button">
+   <span class="carousel-control-prev-icon"> >
+   </span>
+  </button>
+  <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#officeCarousel" type="button">
+   <span class="carousel-control-next-icon">
+   </span>
+  </button>
+ </div>
+</section>
+<section class="container my-5">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h3 class="fw-bold text-uppercase text-dark section-heading">
+      HOUSING
+    </h3>
+    <a class="btn btn-outline-primary btn-sm" href="#housing.html">
+      View All
+    </a>
+  </div>
+
+
+  <div id="housingCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#housingCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#housingCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#housingCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#housingCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#housingCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="row row-cols-2 row-cols-md-4 g-3">
+          <!-- 4 product cards go here -->
+           <div class="col">
+  <div class="card h-100 position-relative">
+    <span class="badge bg-danger position-absolute top-0 start-0 m-2">-20%</span>
+    <img src="./images/FRIDGE AND FREEZER.jpeg" class="card-img-top" alt="Modern Refrigerator">
+    <div class="card-body">
+      <h6 class="card-title">Modern Refrigerator</h6>
+      <p class="card-text mb-1">
+        <span class="text-muted text-decoration-line-through">#480,000</span>
+        <span class="fw-bold text-primary ms-2">#360,000</span>
+      </p>
+      <button class="btn btn-sm btn-success w-100 add-to-cart-btn"
+              data-name="Modern Refrigerator"
+              data-price="360000">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card h-100 position-relative">
+    <span class="badge bg-danger position-absolute top-0 start-0 m-2">-20%</span>
+    <img src="./images/FRIDGE AND FREEZER.jpeg" class="card-img-top" alt="Modern Refrigerator">
+    <div class="card-body">
+      <h6 class="card-title">Modern Refrigerator</h6>
+      <p class="card-text mb-1">
+        <span class="text-muted text-decoration-line-through">#480,000</span>
+        <span class="fw-bold text-primary ms-2">#360,000</span>
+      </p>
+      <button class="btn btn-sm btn-success w-100 add-to-cart-btn"
+              data-name="Modern Refrigerator"
+              data-price="360000">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="col">
+  <div class="card h-100 position-relative">
+    <span class="badge bg-danger position-absolute top-0 start-0 m-2">-20%</span>
+    <img src="./images/FRIDGE AND FREEZER.jpeg" class="card-img-top" alt="Modern Refrigerator">
+    <div class="card-body">
+      <h6 class="card-title">Modern Refrigerator</h6>
+      <p class="card-text mb-1">
+        <span class="text-muted text-decoration-line-through">#480,000</span>
+        <span class="fw-bold text-primary ms-2">#360,000</span>
+      </p>
+      <button class="btn btn-sm btn-success w-100 add-to-cart-btn"
+              data-name="Modern Refrigerator"
+              data-price="360000">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="col">
+  <div class="card h-100 position-relative">
+    <span class="badge bg-danger position-absolute top-0 start-0 m-2">-20%</span>
+    <img src="./images/FRIDGE AND FREEZER.jpeg" class="card-img-top" alt="Modern Refrigerator">
+    <div class="card-body">
+      <h6 class="card-title">Modern Refrigerator</h6>
+      <p class="card-text mb-1">
+        <span class="text-muted text-decoration-line-through">#480,000</span>
+        <span class="fw-bold text-primary ms-2">#360,000</span>
+      </p>
+      <button class="btn btn-sm btn-success w-100 add-to-cart-btn"
+              data-name="Modern Refrigerator"
+              data-price="360000">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="row row-cols-2 row-cols-md-4 g-3">
+          <!-- 4 product cards go here -->
+           <div class="col">
+  <div class="card h-100 position-relative">
+    <span class="badge bg-danger position-absolute top-0 start-0 m-2">-20%</span>
+    <img src="./images/FRIDGE AND FREEZER.jpeg" class="card-img-top" alt="Modern Refrigerator">
+    <div class="card-body">
+      <h6 class="card-title">Modern Refrigerator</h6>
+      <p class="card-text mb-1">
+        <span class="text-muted text-decoration-line-through">#480,000</span>
+        <span class="fw-bold text-primary ms-2">#360,000</span>
+      </p>
+      <button class="btn btn-sm btn-success w-100 add-to-cart-btn"
+              data-name="Modern Refrigerator"
+              data-price="360000">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="col">
+  <div class="card h-100 position-relative">
+    <span class="badge bg-danger position-absolute top-0 start-0 m-2">-20%</span>
+    <img src="./images/FRIDGE AND FREEZER.jpeg" class="card-img-top" alt="Modern Refrigerator">
+    <div class="card-body">
+      <h6 class="card-title">Modern Refrigerator</h6>
+      <p class="card-text mb-1">
+        <span class="text-muted text-decoration-line-through">#480,000</span>
+        <span class="fw-bold text-primary ms-2">#360,000</span>
+      </p>
+      <button class="btn btn-sm btn-success w-100 add-to-cart-btn"
+              data-name="Modern Refrigerator"
+              data-price="360000">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="col">
+  <div class="card h-100 position-relative">
+    <span class="badge bg-danger position-absolute top-0 start-0 m-2">-20%</span>
+    <img src="./images/FRIDGE AND FREEZER.jpeg" class="card-img-top" alt="Modern Refrigerator">
+    <div class="card-body">
+      <h6 class="card-title">Modern Refrigerator</h6>
+      <p class="card-text mb-1">
+        <span class="text-muted text-decoration-line-through">#480,000</span>
+        <span class="fw-bold text-primary ms-2">#360,000</span>
+      </p>
+      <button class="btn btn-sm btn-success w-100 add-to-cart-btn"
+              data-name="Modern Refrigerator"
+              data-price="360000">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="col">
+  <div class="card h-100 position-relative">
+    <span class="badge bg-danger position-absolute top-0 start-0 m-2">-20%</span>
+    <img src="./images/FRIDGE AND FREEZER.jpeg" class="card-img-top" alt="Modern Refrigerator">
+    <div class="card-body">
+      <h6 class="card-title">Modern Refrigerator</h6>
+      <p class="card-text mb-1">
+        <span class="text-muted text-decoration-line-through">#480,000</span>
+        <span class="fw-bold text-primary ms-2">#360,000</span>
+      </p>
+      <button class="btn btn-sm btn-success w-100 add-to-cart-btn"
+              data-name="Modern Refrigerator"
+              data-price="360000">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="row row-cols-2 row-cols-md-4 g-3">
+          <!-- 4 product cards go here -->
+<div class="col">
+  <div class="card h-100 position-relative">
+    <span class="badge bg-danger position-absolute top-0 start-0 m-2">-20%</span>
+    <img src="./images/FRIDGE AND FREEZER.jpeg" class="card-img-top" alt="Modern Refrigerator">
+    <div class="card-body">
+      <h6 class="card-title">Modern Refrigerator</h6>
+      <p class="card-text mb-1">
+        <span class="text-muted text-decoration-line-through">#480,000</span>
+        <span class="fw-bold text-primary ms-2">#360,000</span>
+      </p>
+      <button class="btn btn-sm btn-success w-100 add-to-cart-btn"
+              data-name="Modern Refrigerator"
+              data-price="360000">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="col">
+  <div class="card h-100 position-relative">
+    <span class="badge bg-danger position-absolute top-0 start-0 m-2">-20%</span>
+    <img src="./images/FRIDGE AND FREEZER.jpeg" class="card-img-top" alt="Modern Refrigerator">
+    <div class="card-body">
+      <h6 class="card-title">Modern Refrigerator</h6>
+      <p class="card-text mb-1">
+        <span class="text-muted text-decoration-line-through">#480,000</span>
+        <span class="fw-bold text-primary ms-2">#360,000</span>
+      </p>
+      <button class="btn btn-sm btn-success w-100 add-to-cart-btn"
+              data-name="Modern Refrigerator"
+              data-price="360000">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="col">
+  <div class="card h-100 position-relative">
+    <span class="badge bg-danger position-absolute top-0 start-0 m-2">-20%</span>
+    <img src="./images/FRIDGE AND FREEZER.jpeg" class="card-img-top" alt="Modern Refrigerator">
+    <div class="card-body">
+      <h6 class="card-title">Modern Refrigerator</h6>
+      <p class="card-text mb-1">
+        <span class="text-muted text-decoration-line-through">#480,000</span>
+        <span class="fw-bold text-primary ms-2">#360,000</span>
+      </p>
+      <button class="btn btn-sm btn-success w-100 add-to-cart-btn"
+              data-name="Modern Refrigerator"
+              data-price="360000">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="col">
+  <div class="card h-100 position-relative">
+    <span class="badge bg-danger position-absolute top-0 start-0 m-2">-20%</span>
+    <img src="./images/FRIDGE AND FREEZER.jpeg" class="card-img-top" alt="Modern Refrigerator">
+    <div class="card-body">
+      <h6 class="card-title">Modern Refrigerator</h6>
+      <p class="card-text mb-1">
+        <span class="text-muted text-decoration-line-through">#480,000</span>
+        <span class="fw-bold text-primary ms-2">#360,000</span>
+      </p>
+      <button class="btn btn-sm btn-success w-100 add-to-cart-btn"
+              data-name="Modern Refrigerator"
+              data-price="360000">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="carousel-item">
+        <div class="row row-cols-2 row-cols-md-4 g-3">
+          <!-- 4 product cards go here -->
+           <div class="col">
+  <div class="card h-100 position-relative">
+    <span class="badge bg-danger position-absolute top-0 start-0 m-2">-20%</span>
+    <img src="./images/FRIDGE AND FREEZER.jpeg" class="card-img-top" alt="Modern Refrigerator">
+    <div class="card-body">
+      <h6 class="card-title">Modern Refrigerator</h6>
+      <p class="card-text mb-1">
+        <span class="text-muted text-decoration-line-through">#480,000</span>
+        <span class="fw-bold text-primary ms-2">#360,000</span>
+      </p>
+      <button class="btn btn-sm btn-success w-100 add-to-cart-btn"
+              data-name="Modern Refrigerator"
+              data-price="360000">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="col">
+  <div class="card h-100 position-relative">
+    <span class="badge bg-danger position-absolute top-0 start-0 m-2">-20%</span>
+    <img src="./images/FRIDGE AND FREEZER.jpeg" class="card-img-top" alt="Modern Refrigerator">
+    <div class="card-body">
+      <h6 class="card-title">Modern Refrigerator</h6>
+      <p class="card-text mb-1">
+        <span class="text-muted text-decoration-line-through">#480,000</span>
+        <span class="fw-bold text-primary ms-2">#360,000</span>
+      </p>
+      <button class="btn btn-sm btn-success w-100 add-to-cart-btn"
+              data-name="Modern Refrigerator"
+              data-price="360000">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="col">
+  <div class="card h-100 position-relative">
+    <span class="badge bg-danger position-absolute top-0 start-0 m-2">-20%</span>
+    <img src="./images/FRIDGE AND FREEZER.jpeg" class="card-img-top" alt="Modern Refrigerator">
+    <div class="card-body">
+      <h6 class="card-title">Modern Refrigerator</h6>
+      <p class="card-text mb-1">
+        <span class="text-muted text-decoration-line-through">#480,000</span>
+        <span class="fw-bold text-primary ms-2">#360,000</span>
+      </p>
+      <button class="btn btn-sm btn-success w-100 add-to-cart-btn"
+              data-name="Modern Refrigerator"
+              data-price="360000">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="col">
+  <div class="card h-100 position-relative">
+    <span class="badge bg-danger position-absolute top-0 start-0 m-2">-20%</span>
+    <img src="./images/FRIDGE AND FREEZER.jpeg" class="card-img-top" alt="Modern Refrigerator">
+    <div class="card-body">
+      <h6 class="card-title">Modern Refrigerator</h6>
+      <p class="card-text mb-1">
+        <span class="text-muted text-decoration-line-through">#480,000</span>
+        <span class="fw-bold text-primary ms-2">#360,000</span>
+      </p>
+      <button class="btn btn-sm btn-success w-100 add-to-cart-btn"
+              data-name="Modern Refrigerator"
+              data-price="360000">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="carousel-item">
+        <div class="row row-cols-2 row-cols-md-4 g-3">
+          <!-- 4 product cards go here -->
+           <div class="col">
+  <div class="card h-100 position-relative">
+    <span class="badge bg-danger position-absolute top-0 start-0 m-2">-20%</span>
+    <img src="./images/FRIDGE AND FREEZER.jpeg" class="card-img-top" alt="Modern Refrigerator">
+    <div class="card-body">
+      <h6 class="card-title">Modern Refrigerator</h6>
+      <p class="card-text mb-1">
+        <span class="text-muted text-decoration-line-through">#480,000</span>
+        <span class="fw-bold text-primary ms-2">#360,000</span>
+      </p>
+      <button class="btn btn-sm btn-success w-100 add-to-cart-btn"
+              data-name="Modern Refrigerator"
+              data-price="360000">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="col">
+  <div class="card h-100 position-relative">
+    <span class="badge bg-danger position-absolute top-0 start-0 m-2">-20%</span>
+    <img src="./images/FRIDGE AND FREEZER.jpeg" class="card-img-top" alt="Modern Refrigerator">
+    <div class="card-body">
+      <h6 class="card-title">Modern Refrigerator</h6>
+      <p class="card-text mb-1">
+        <span class="text-muted text-decoration-line-through">#480,000</span>
+        <span class="fw-bold text-primary ms-2">#360,000</span>
+      </p>
+      <button class="btn btn-sm btn-success w-100 add-to-cart-btn"
+              data-name="Modern Refrigerator"
+              data-price="360000">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="col">
+  <div class="card h-100 position-relative">
+    <span class="badge bg-danger position-absolute top-0 start-0 m-2">-20%</span>
+    <img src="./images/FRIDGE AND FREEZER.jpeg" class="card-img-top" alt="Modern Refrigerator">
+    <div class="card-body">
+      <h6 class="card-title">Modern Refrigerator</h6>
+      <p class="card-text mb-1">
+        <span class="text-muted text-decoration-line-through">#480,000</span>
+        <span class="fw-bold text-primary ms-2">#360,000</span>
+      </p>
+      <button class="btn btn-sm btn-success w-100 add-to-cart-btn"
+              data-name="Modern Refrigerator"
+              data-price="360000">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="col">
+  <div class="card h-100 position-relative">
+    <span class="badge bg-danger position-absolute top-0 start-0 m-2">-20%</span>
+    <img src="./images/FRIDGE AND FREEZER.jpeg" class="card-img-top" alt="Modern Refrigerator">
+    <div class="card-body">
+      <h6 class="card-title">Modern Refrigerator</h6>
+      <p class="card-text mb-1">
+        <span class="text-muted text-decoration-line-through">#480,000</span>
+        <span class="fw-bold text-primary ms-2">#360,000</span>
+      </p>
+      <button class="btn btn-sm btn-success w-100 add-to-cart-btn"
+              data-name="Modern Refrigerator"
+              data-price="360000">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#housingCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#housingCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
   </div>
 </section>
 
+<section class="container my-5">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h3 class="fw-bold text-uppercase text-dark section-heading">
+      Electronics
+    </h3>
+    <a class="btn btn-outline-primary btn-sm" href="electronics.html">
+      View All
+    </a>
+  </div>
+
+  <div id="electronicsCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row row-cols-2 row-cols-md-4 g-3">
+          <div class="col">
+            <div class="card h-100 position-relative border-0 shadow-sm">
+              <span class="badge bg-danger position-absolute top-0 start-0 m-2">-20%</span>
+              <img src="./images/55 INCHES TV.jpeg" class="card-img-top" alt="Smart TV 55">
+              <div class="card-body">
+                <h6 class="card-title product-title">Smart TV 55"</h6>
+                <p class="card-text mb-1">
+                  <span class="text-muted text-decoration-line-through">#950,000</span>
+                  <span class="fw-bold text-primary ms-2">#760,000</span>
+                </p>
+                <button  class="btn btn-sm btn-success w-100 add-to-cart-btn" data-name="Smart TV 55"  data-price="760000" 
+                 data-image="./images/55 INCHES TV.jpeg"> Add to Cart </button>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 position-relative border-0 shadow-sm">
+              <span class="badge bg-danger position-absolute top-0 start-0 m-2">-25%</span>
+              <img src="./images/BLUETOOTH SPEAKER.jpeg" class="card-img-top" alt="Bluetooth Speaker">
+              <div class="card-body">
+                <h6 class="card-title product-title">Bluetooth Speaker</h6>
+                <p class="card-text mb-1">
+                  <span class="text-muted text-decoration-line-through">#45,000</span>
+                  <span class="fw-bold text-primary ms-2">#33,750</span>
+                </p>
+                <button class="btn btn-sm btn-success w-100">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 position-relative border-0 shadow-sm">
+              <span class="badge bg-danger position-absolute top-0 start-0 m-2">-15%</span>
+              <img src="./images/AIRPODS.jpeg" class="card-img-top" alt="Wireless Earbuds">
+              <div class="card-body">
+                <h6 class="card-title product-title">Wireless Earbuds</h6>
+                <p class="card-text mb-1">
+                  <span class="text-muted text-decoration-line-through">#15,000</span>
+                  <span class="fw-bold text-primary ms-2">#12,750</span>
+                </p>
+                <button class="btn btn-sm btn-success w-100">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 position-relative border-0 shadow-sm">
+              <span class="badge bg-danger position-absolute top-0 start-0 m-2">-5%</span>
+              <img src="./images/CCTV-LIKE.jpeg" class="card-img-top" alt="CCTV Camera">
+              <div class="card-body">
+                <h6 class="card-title product-title">CCTV Camera</h6>
+                <p class="card-text mb-1">
+                  <span class="text-muted text-decoration-line-through">#40,000</span>
+                  <span class="fw-bold text-primary ms-2">#38,000</span>
+                </p>
+                <button class="btn btn-sm btn-success w-100">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row row-cols-2 row-cols-md-4 g-3">
+          <div class="col">
+            <div class="card h-100 position-relative border-0 shadow-sm">
+              <span class="badge bg-danger position-absolute top-0 start-0 m-2">-10%</span>
+              <img src="./images/ELECTRIC KETTLE.jpeg" class="card-img-top" alt="Electric Kettle">
+              <div class="card-body">
+                <h6 class="card-title product-title">Electric Kettle</h6>
+                <p class="card-text mb-1">
+                  <span class="text-muted text-decoration-line-through">#15,000</span>
+                  <span class="fw-bold text-primary ms-2">#12,000</span>
+                </p>
+                <button class="btn btn-sm btn-success w-100">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 position-relative border-0 shadow-sm">
+              <span class="badge bg-danger position-absolute top-0 start-0 m-2">-10%</span>
+              <img src="./images/HEADPHONE.jpeg" class="card-img-top" alt="Headphone">
+              <div class="card-body">
+                <h6 class="card-title product-title">Headphone</h6>
+                <p class="card-text mb-1">
+                  <span class="text-muted text-decoration-line-through">#15,000</span>
+                  <span class="fw-bold text-primary ms-2">#12,000</span>
+                </p>
+                <button class="btn btn-sm btn-success w-100">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 position-relative border-0 shadow-sm">
+              <span class="badge bg-danger position-absolute top-0 start-0 m-2">-10%</span>
+              <img src="./images/BLUE GATE.jpeg" class="card-img-top" alt="Blue Gate">
+              <div class="card-body">
+                <h6 class="card-title product-title">Blue Gate</h6>
+                <p class="card-text mb-1">
+                  <span class="text-muted text-decoration-line-through">#15,000</span>
+                  <span class="fw-bold text-primary ms-2">#12,000</span>
+                </p>
+                <button class="btn btn-sm btn-success w-100">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 position-relative border-0 shadow-sm">
+              <span class="badge bg-danger position-absolute top-0 start-0 m-2">-5%</span>
+              <img src="./images/GAMING LAPTOP.jpeg" class="card-img-top" alt="Gaming Laptop">
+              <div class="card-body">
+                <h6 class="card-title product-title">Gaming Laptop</h6>
+                <p class="card-text mb-1">
+                  <span class="text-muted text-decoration-line-through">#1,000,000</span>
+                  <span class="fw-bold text-primary ms-2">#950,000</span>
+                </p>
+                <button class="btn btn-sm btn-success w-100">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#electronicsCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#electronicsCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+    <!-- Pagination indicators -->
+    <div class="carousel-indicators mt-3">
+      <button type="button" data-bs-target="#electronicsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#electronicsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+  </div>
+</section>
+
+
+ <div class="container my-5">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h4>Special Offers | <span class="text-muted">Up to 30% Off</span></h4>
+    <a href="#" class="btn btn-outline-primary btn-sm">View All ></a>
+  </div>
+  <div class="d-flex flex-row gap-3 overflow-auto">
+    <!-- Product Cards -->
+    <!-- Repeat this block for each product -->
+    <!-- You can use a loop if working with a backend -->
+    <!-- Product 1 to 20 -->
+    <!-- BEGIN CARDS -->
+    <!-- Example card, copy and paste for 20 -->
+    <!-- Replace image URL or text as needed -->
+    <!-- START LOOP -->
+    <!-- You may replace this with server-side or JS loop -->
+    <!-- Example for demonstration -->
+    <!-- CARD TEMPLATE -->
+    <!-- Copy the next block 20 times and update accordingly -->
+
+        <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="./images/watches-sunglasses_300x300.png" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="./images/UNKNOWN.jpeg" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col" style="min-width: 250px;">
+      <div class="card h-100 position-relative" data-name="Product 1">
+        <img src="https://via.placeholder.com/200x200?text=Product+1" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text"><del>$30</del> <strong class="text-primary">$20</strong></p>
+          <span class="badge bg-danger position-absolute top-0 start-0 m-2">-33%</span>
+          <button class="btn btn-success w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+
+</section>
+
 <!-- Services Row -->
-<section class="bg-light py-4 border-top">
-  <div class="container d-flex flex-wrap justify-content-between text-center services-row">
-    <div><i class="fas fa-rocket fa-2x mb-2"></i><p>Free Delivery</p></div>
-    <div><i class="fas fa-undo fa-2x mb-2"></i><p>30 Days Return</p></div>
-    <div><i class="fas fa-lock fa-2x mb-2"></i><p>Secure Payment</p></div>
-    <div><i class="fas fa-headset fa-2x mb-2"></i><p>24/7 Support</p></div>
-    <div><i class="fas fa-gift fa-2x mb-2"></i><p>Gift Service</p></div>
+<section class="bg-light py-4 border-top overflow-hidden">
+  <div class="marquee d-flex align-items-center">
+    <div class="d-flex gap-5 flex-nowrap marquee-content">
+      <div><i class="fas fa-rocket fa-2x mb-2"></i><p>Free Delivery</p></div>
+      <div><i class="fas fa-undo fa-2x mb-2"></i><p>30 Days Return</p></div>
+      <div><i class="fas fa-lock fa-2x mb-2"></i><p>Secure Payment</p></div>
+      <div><i class="fas fa-headset fa-2x mb-2"></i><p>24/7 Support</p></div>
+      <div><i class="fas fa-gift fa-2x mb-2"></i><p>Gift Service</p></div>
+
+      <!-- Duplicate for seamless looping -->
+      <div><i class="fas fa-rocket fa-2x mb-2"></i><p>Free Delivery</p></div>
+      <div><i class="fas fa-undo fa-2x mb-2"></i><p>30 Days Return</p></div>
+      <div><i class="fas fa-lock fa-2x mb-2"></i><p>Secure Payment</p></div>
+      <div><i class="fas fa-headset fa-2x mb-2"></i><p>24/7 Support</p></div>
+      <div><i class="fas fa-gift fa-2x mb-2"></i><p>Gift Service</p></div>
+    </div>
   </div>
 </section>
 
 <!-- Footer -->
 <footer class="bg-dark text-white py-5">
-  <div class="container text-center mb-4">
-    <h5>Subscribe to our Newsletter</h5>
-    <form class="d-flex justify-content-center mt-3">
-      <input type="email" class="form-control w-50" placeholder="Enter your email">
-      <button class="btn btn-warning ms-2">Subscribe</button>
-    </form>
-  </div>
-  <div class="container d-flex flex-wrap justify-content-between text-center border-top pt-4">
-    <div class="mb-3">
-      <h6>Quick Links</h6>
+  <div class="container text-center mb-5">
+  <h4 class="fw-bold mb-3">Subscribe to our Newsletter</h4>
+  
+  <form class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+    <input 
+      type="email" 
+      class="form-control w-100 w-md-50" 
+      placeholder="Enter your email" 
+      required
+    >
+
+    <button type="submit" class="btn btn-outline-primary px-4">
+      Subscribe
+    </button>
+
+    <a 
+      href="mailto:calebdainitife@gmail.com" 
+      class="btn btn-outline-primary d-inline-flex align-items-center gap-2 px-4 py-2 fw-semibold shadow-sm"
+    >
+      <i class="bi bi-envelope"></i> Email Us
+    </a>
+  </form>
+</div>
+
+  <div class="container border-top pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+    <!-- Logo -->
+    <div class="mb-4 mb-md-0">
+      <a href="index.html" class="text-white fw-bold fs-3 text-decoration-none">
+        Market<span class="text-warning">kit</span>
+      </a>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="mb-4 mb-md-0">
+      <h6 class="fw-bold mb-3">Quick Links</h6>
       <ul class="list-unstyled">
-        <li><a href="#" class="text-white">Shop</a></li>
-        <li><a href="#" class="text-white">Contact</a></li>
-        <li><a href="#" class="text-white">FAQ</a></li>
+        <li><a href="#" class="footer-link">Shop</a></li>
+        <li><a href="#" class="footer-link">Contact</a></li>
+        <li><a href="#" class="footer-link">FAQ</a></li>
       </ul>
     </div>
-    <div class="mb-3">
-      <h6>Follow Us</h6>
-      <div class="d-flex justify-content-center gap-2">
-        <i class="fab fa-facebook fa-lg"></i>
-        <i class="fab fa-twitter fa-lg"></i>
-        <i class="fab fa-instagram fa-lg"></i>
+
+    <!-- Social Icons -->
+    <div>
+      <h6 class="fw-bold mb-3">Follow Us</h6>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="#" class="social-icon"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram fa-lg"></i></a>
       </div>
-    </div>
-    <div class="mb-3">
-      <h3>Market<span class="text-warning">kit</span></h3>
     </div>
   </div>
 </footer>
@@ -154,7 +1389,7 @@
   const generateProductCard = () => `
     <div class="p-2">
       <div class="card h-100">
-        <img src="https://via.placeholder.com/200x150" class="card-img-top" alt="Product">
+        <img src="./images/appliances.png" class="card-img-top" alt="Product">
         <div class="card-body text-center">
           <h6 class="card-title">Product Name</h6>
           <p class="text-success">$99.99</p>
@@ -216,6 +1451,67 @@
     });
   });
 </script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  function updateCartCount() {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+    const cartCount = document.getElementById("cart-count");
+    if (cartCount) {
+      cartCount.innerText = totalItems;
+    }
+  }
+
+
+  const buttons = document.querySelectorAll(".btn-success");
+  buttons.forEach(button => {
+    button.addEventListener("click", function () {
+      const card = this.closest(".card");
+      const title = card.querySelector(".card-title").innerText;
+      const price = card.querySelector(".text-primary").innerText;
+      const image = card.querySelector("img").getAttribute("src");
+
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      const itemIndex = cart.findIndex(item => item.title === title);
+
+      if (itemIndex >= 0) {
+        cart[itemIndex].quantity += 1;
+      } else {
+        cart.push({ title, price, image, quantity: 1 });
+      }
+
+      localStorage.setItem("cart", JSON.stringify(cart));
+      updateCartCount();
+      alert(`${title} added to cart!`);
+    });
+  });
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.getElementById("searchInput");
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const term = this.value.toLowerCase();
+      const cards = document.querySelectorAll(".card[data-name]");
+
+      cards.forEach(card => {
+        const name = card.getAttribute("data-name").toLowerCase();
+        const col = card.closest(".col");
+        if (col) {
+          col.style.display = name.includes(term) ? "block" : "none";
+        }
+      });
+    });
+  }
+});
+</script>
+
+
 
 </body>
 </html>
