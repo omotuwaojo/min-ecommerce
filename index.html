@@ -1,11 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Min-ecommerce</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marketkit - Homepage</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>PEALDAN</h1>
+
+<!-- Header -->
+<header class="bg-primary text-white py-2 sticky-top shadow-sm">
+  <div class="container d-flex align-items-center justify-content-between flex-wrap">
+    <div class="d-flex align-items-center">
+      <button class="btn btn-light d-lg-none me-2" id="hamburger"><i class="fas fa-bars"></i></button>
+      <h3 class="mb-0 fw-bold">Market<span class="text-warning">kit</span></h3>
+    </div>
+    <br><br>
+    <nav class="d-none d-lg-flex gap-3 align-items-center">
+      <a href="#"><i class="fas fa-home"></i></a>
+      <a href="#"><i class="fas fa-store"></i></a>
+      <a href="#"><i class="fas fa-file"></i></a>
+      <a href="#"><i class="fas fa-blog"></i></a>
+    </nav>
+    <form class="d-flex align-items-center flex-grow-1 mx-3">
+      <input class="form-control me-2" type="search" placeholder="Search for items…" />
+      <button class="btn btn-dark" type="submit"><i class="fas fa-search"></i></button>
+    </form>
+    <div class="d-flex align-items-center gap-3">
+      <a href="#" class="text-white text-decoration-none"><i class="fas fa-user"></i> Login/Register</a>
+      <a href="#" id="cart-icon" class="text-white position-relative">
+        <i class="fas fa-shopping-cart fa-lg"></i>
+        <span class="position-absolute top-0 start-100 translate-middle badge bg-danger rounded-circle" id="cart-count">0</span>
+      </a>
+      <button class="btn btn-outline-light" id="toggle-theme"><i class="fas fa-moon"></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Sidebar -->
+<div id="mobile-menu" class="mobile-sidebar">
+  <div class="d-flex justify-content-between align-items-center p-3">
+    <h5 class="mb-0">Menu</h5>
+    <button id="close-sidebar" class="btn btn-sm btn-dark">&times;</button>
+  </div>
+  <ul class="list-unstyled px-3">
+    <li><a href="#"><i class="fas fa-home me-2"></i>Home</a></li>
+    <li><a href="#"><i class="fas fa-store me-2"></i>Shop</a></li>
+    <li><a href="#"><i class="fas fa-file me-2"></i>Pages</a></li>
+    <li><a href="#"><i class="fas fa-blog me-2"></i>Blog</a></li>
+  </ul>
+</div>
+<div id="overlay" class="overlay"></div>
+
+<!-- Hero Banner -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+  <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="carousel-image-container">
+        <img src="./generators-inverters_300x300.png" class="d-block w-100" alt="Generators and Inverters">
+        <div class="carousel-overlay">
+          <div class="carousel-caption-center text-white text-center">
+            <h1 class="display-4 fw-bold">WELCOME TO MARKETKIT</h1>
+            <p class="fs-4 fw-semibold">Your one-stop shop for everything!</p>
+            <a href="#" class="btn btn-warning btn-lg fw-bold mt-3">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="carousel-image-container">
+        <img src="./sneakers_300x300.png" class="d-block w-100" alt="Sneakers">
+        <div class="carousel-overlay">
+          <div class="carousel-caption-center text-white text-center">
+            <h1 class="display-5 fw-bold">STEP INTO STYLE</h1>
+            <p class="fs-4 fw-semibold">Discover the latest trends in footwear.</p>
+            <a href="#" class="btn btn-warning btn-lg fw-bold mt-3">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Category Carousels -->
+<section class="container py-5">
+  <div id="categories">
+    <!-- Reusable category block -->
+  </div>
+</section>
+
+<!-- Services Row -->
+<section class="bg-light py-4 border-top">
+  <div class="container d-flex flex-wrap justify-content-between text-center services-row">
+    <div><i class="fas fa-rocket fa-2x mb-2"></i><p>Free Delivery</p></div>
+    <div><i class="fas fa-undo fa-2x mb-2"></i><p>30 Days Return</p></div>
+    <div><i class="fas fa-lock fa-2x mb-2"></i><p>Secure Payment</p></div>
+    <div><i class="fas fa-headset fa-2x mb-2"></i><p>24/7 Support</p></div>
+    <div><i class="fas fa-gift fa-2x mb-2"></i><p>Gift Service</p></div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-5">
+  <div class="container text-center mb-4">
+    <h5>Subscribe to our Newsletter</h5>
+    <form class="d-flex justify-content-center mt-3">
+      <input type="email" class="form-control w-50" placeholder="Enter your email">
+      <button class="btn btn-warning ms-2">Subscribe</button>
+    </form>
+  </div>
+  <div class="container d-flex flex-wrap justify-content-between text-center border-top pt-4">
+    <div class="mb-3">
+      <h6>Quick Links</h6>
+      <ul class="list-unstyled">
+        <li><a href="#" class="text-white">Shop</a></li>
+        <li><a href="#" class="text-white">Contact</a></li>
+        <li><a href="#" class="text-white">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="mb-3">
+      <h6>Follow Us</h6>
+      <div class="d-flex justify-content-center gap-2">
+        <i class="fab fa-facebook fa-lg"></i>
+        <i class="fab fa-twitter fa-lg"></i>
+        <i class="fab fa-instagram fa-lg"></i>
+      </div>
+    </div>
+    <div class="mb-3">
+      <h3>Market<span class="text-warning">kit</span></h3>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+  const categories = ['Today Deals', 'Housing', 'Office', 'Electronics'];
+
+  const generateProductCard = () => `
+    <div class="p-2">
+      <div class="card h-100">
+        <img src="https://via.placeholder.com/200x150" class="card-img-top" alt="Product">
+        <div class="card-body text-center">
+          <h6 class="card-title">Product Name</h6>
+          <p class="text-success">$99.99</p>
+          <button class="btn btn-outline-primary w-100 add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  `;
+
+  categories.forEach(title => {
+    $('#categories').append(`
+      <div class="mb-5">
+        <div class="d-flex justify-content-between align-items-center mb-3 category-header">
+          <a href="#" class="btn btn-outline-primary">View All</a>
+          <h5 class="mb-0">${title}</h5>
+        </div>
+        <div class="category-slider">${generateProductCard().repeat(6)}</div>
+      </div>
+    `);
+  });
+
+  $(document).ready(function () {
+    $('.category-slider').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      infinite: false,
+      arrows: true,
+      responsive: [
+        { breakpoint: 992, settings: { slidesToShow: 3 } },
+        { breakpoint: 768, settings: { slidesToShow: 2 } },
+        { breakpoint: 576, settings: { slidesToShow: 1 } }
+      ]
+    });
+
+    let cartCount = 0;
+    $(document).on('click', '.add-to-cart', function () {
+      cartCount++;
+      $('#cart-count').text(cartCount);
+    });
+
+    $('#toggle-theme').click(function () {
+      const html = $('html');
+      const icon = $(this).find('i');
+      if (html.attr('data-theme') === 'dark') {
+        html.attr('data-theme', 'light');
+        icon.removeClass('fa-sun').addClass('fa-moon');
+      } else {
+        html.attr('data-theme', 'dark');
+        icon.removeClass('fa-moon').addClass('fa-sun');
+      }
+    });
+
+    $('#hamburger').click(() => {
+      $('#mobile-menu, #overlay').addClass('active');
+    });
+
+    $('#close-sidebar, #overlay').click(() => {
+      $('#mobile-menu, #overlay').removeClass('active');
+    });
+  });
+</script>
+
 </body>
 </html>
