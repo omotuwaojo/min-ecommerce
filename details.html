@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Leather Bag</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assests/css/detail.css">
+</head>
+<body>
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="product-image-container">
+                    <img src="./assests/images/3-copy-1-800x800.jpeg" alt="Small Leather Bag" class="product-image" id="mainProductImage">
+                    <div class="zoom-icon" onclick="showLightbox()">
+                        <i class="bi bi-zoom-in"></i>
+                    </div>
+                    
+                    <!-- Thumbnails -->
+                    <div class="thumbnail-images">
+                        <img src="./assests/images/pic.jpg" class="active" alt="Thumb 1" onclick="changeImage(this)">
+                        <img src="/assests/images/3-copy-1-800x800.jpeg" alt="Thumb 2" onclick="changeImage(this)">
+                        <img src="./assests/images/pic.jpg" alt="Thumb 3" onclick="changeImage(this)">
+                        <img src="/assests/images/3-copy-1-800x800.jpeg" alt="Thumb 4" onclick="changeImage(this)">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">HOME</a></li>
+                        <li class="breadcrumb-item"><a href="#">BAG</a></li>
+                    </ol>
+                </nav>
+
+                <h1 class="product-title">Small Leather Bag</h1>
+
+                <div class="price">
+                    <sup class="sup2">RM</sup>
+                    <span class="original-price">290.00</span>
+                    <sup class="sup1">RM</sup>
+                    <span class="current-price">199.00</span>
+                </div>
+
+                <p class="product-description">
+                    Crafted from high-quality genuine leather with a soft, delicate feel.
+                    Durable and stylish. Compact and lightweight—perfect for carrying on the go. 
+                    Whether you're shopping, on a date, or commuting to work, it's your go-to versatile accessory!
+                </p>
+
+                <div class="product-details">
+                    <div class="detail-item">Leather features: Cowhide</div>
+                    <div class="detail-item">Bag shape: Horizontal Square</div>
+                    <div class="detail-item">Strap root number: Single</div>
+                    <div class="detail-item">Opening method: Zipper</div>
+                    <div class="detail-item">Hardness: Soft</div>
+                </div>
+
+                <div class="quantity-selector">
+                    <button class="quantity-btn minus">-</button>
+                    <input type="text" class="quantity-input" value="1" min="1">
+                    <button class="quantity-btn plus">+</button>
+                    <button class="add-to-cart-btn"><i class="bi bi-bag-fill"></i> ADD TO CART</button>
+                </div>
+
+                <button class="gpay-btn">
+                     <i class="bi bi-google-play"></i> Buy with <i class="bi bi-google"></i> Pay
+                </button>
+                <button class="gpay-btn2">
+                     <i class="bi bi-google-play"></i> Pay with <i class="bi bi-stripe"></i></i>
+                     Stripe
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <section class="product-details">
+        <div class="container">
+            <h2>Product Details</h2>
+            <p>Discover the perfect blend of style and functionality with our Small Leather Bag. 
+            Made from premium cowhide leather, this bag is designed to elevate your everyday look while providing ample space for your essentials.</p>
+            <ul>
+                <li>Dimensions: 25cm x 20cm x 10cm</li>
+                <li>Weight: 500g</li>
+                <li>Available Colors: Black, Brown, Tan</li>
+                <li>Care Instructions: Wipe clean with a damp cloth</li>
+                <li>Warranty: 1 year against manufacturing defects</li>
+                <li>Shipping: Free shipping on orders over RM200</li>
+                <li>Returns: 30-day return policy</li>
+                <li>Customer Reviews: ★★★★☆ (4.5/5 based on 120 reviews)</li>
+                <li>Frequently Bought Together: 
+                    <ul>
+                        <li>Leather Wallet</li>
+                        <li>Keychain</li>
+                        <li>Sunglasses</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox" onclick="hideLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="Enlarged view">
+            <div class="brand-name">BAG</div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Quantity selector functionality
+            const minusBtn = document.querySelector('.minus');
+            const plusBtn = document.querySelector('.plus');
+            const quantityInput = document.querySelector('.quantity-input');
+            
+            minusBtn.addEventListener('click', function() {
+                let currentValue = parseInt(quantityInput.value);
+                if (currentValue > 1) {
+                    quantityInput.value = currentValue - 1;
+                }
+            });
+            
+            plusBtn.addEventListener('click', function() {
+                let currentValue = parseInt(quantityInput.value);
+                quantityInput.value = currentValue + 1;
+            });
+            
+            // Ensure only numbers are entered
+            quantityInput.addEventListener('input', function() {
+                this.value = this.value.replace(/[^0-9]/g, '');
+                if (this.value === '' || parseInt(this.value) < 1) {
+                    this.value = 1;
+                }
+            });
+            
+            // Add to cart functionality
+            const addToCartBtn = document.querySelector('.add-to-cart-btn');
+            addToCartBtn.addEventListener('click', function() {
+                const quantity = parseInt(quantityInput.value);
+                alert(`Added ${quantity} Small Leather Bag(s) to your cart!`);
+            });
+            // Google Pay button functionality
+            const gpayBtn = document.querySelector('.gpay-btn');
+            gpayBtn.addEventListener('click', function() {
+                alert('Proceeding to checkout with Google Pay');
+            });
+        });
+
+        // Thumbnail image change functionality
+        function changeImage(element) {
+            const mainImg = document.getElementById('mainProductImage');
+            mainImg.src = element.src;
+            
+            // Update active thumbnail
+            document.querySelectorAll('.thumbnail-images img').forEach(img => {
+                img.classList.remove('active');
+            });
+            element.classList.add('active');
+        }
+
+        // Lightbox functionality
+        function showLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightboxImage');
+            lightboxImg.src = document.getElementById('mainProductImage').src;
+            lightbox.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function hideLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+            document.body.style.overflow = '';
+        }
+        
+        // Close lightbox when clicking outside image
+        window.onclick = function(event) {
+            const lightbox = document.getElementById('lightbox');
+            if (event.target == lightbox) {
+                hideLightbox();
+            }
+        }
+    </script>
+</body>
+</html>
