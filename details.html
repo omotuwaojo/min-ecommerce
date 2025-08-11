@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./assests/css/detail.css">
 </head>
 <body>
@@ -99,6 +100,14 @@
                     </ul>
                 </li>
             </ul>
+            <h2>FEATURES</h2>
+            <ul>
+                <li>Large-capacity design, easily fits laptop, books, and daily essentials.</li>
+                <li>Multiple compartments, keep your items organized and easy to find.</li>
+                <li>Water-resistant fabric, protects belongings from light rain and spills.</li>
+                <li>Reinforced stitching and durable zippers, built for long-term use.</li>
+                <li>Adjustable padded shoulder straps, comfortable for all-day carrying.</li>
+            </ul>
         </div>
     </section>
 
@@ -109,6 +118,138 @@
             <div class="brand-name">BAG</div>
         </div>
     </div>
+
+    <div class="container py-5">
+        <h2 class="section-title">Related Products</h2>
+        <div class="filter-section mb-4">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="filter-group">
+                        <div class="filter-title">Price Range</div>
+                        <select class="form-select form-select-sm price-filter">
+                            <option value="all">All Prices</option>
+                            <option value="0-5000">Under N5,000</option>
+                            <option value="5000-10000">N5,000 - N10,000</option>
+                            <option value="10000-50000">N10,000 - N50,000</option>
+                            <option value="50000+">Over N50,000</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="filter-group">
+                        <div class="filter-title">Discount</div>
+                        <select class="form-select form-select-sm discount-filter">
+                            <option value="all">All Items</option>
+                            <option value="discounted">Discounted Only</option>
+                            <option value="nodiscount">No Discount</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="filter-group">
+                        <div class="filter-title">Sort By</div>
+                        <select class="form-select form-select-sm sort-by">
+                            <option value="default">Default</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="discount">Discount %</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="filter-group">
+                        <div class="filter-title">Search</div>
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control product-search" placeholder="Search products...">
+                            <button class="btn btn-outline-secondary" type="button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row product-container">
+            <div class="col-md-6 col-lg-4 col-xl-3 product-item" data-price="1820" data-discount="68" data-category="audio">
+                <div class="product-card h-100">
+                    <button class="wishlist-btn" data-product="1">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <div class="position-relative">
+                        <img src="./assests/images/pic.jpg" class="product-image w-100" alt="FYLO MINI Bluetooth">
+                    </div>
+                    <div class="p-3">
+                        <div class="brand-name">BAG</div>
+                        <h5 class="product-title">Small Leather Bag</h5>
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="current-price">N 8,943</span>
+                            <span class="original-price ms-2">N 3,776</span>
+                        </div>
+                        <button class="btn add-to-cart" data-product="1">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 col-xl-3 product-item " data-price="8943" data-discount="0" data-category="audio">
+                <div class="product-card h-100">
+                    <button class="wishlist-btn" data-product="5">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <img src="./assests/images/pic.jpg" class="product-image w-100" alt="FYLO M1">
+                    <div class="p-3">
+                        <div class="brand-name">BAG</div>
+                        <h5 class="product-title">Small Leather Bag</h5>
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="current-price">N 8,943</span>
+                            <span class="original-price ms-2">N 3,776</span>
+                        </div>
+                        <button class="btn add-to-cart" data-product="5">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 product-item" data-price="8943" data-discount="0" data-category="audio">
+                <div class="product-card h-100">
+                    <button class="wishlist-btn" data-product="5">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <img src="./assests/images/pic.jpg" class="product-image w-100" alt="FYLO M1">
+                    <div class="p-3">
+                        <div class="brand-name">BAG</div>
+                        <h5 class="product-title">Small Leather Bag</h5>
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="current-price">N 8,943</span>
+                            <span class="original-price ms-2">N 3,776</span>
+                        </div>
+                        <button class="btn add-to-cart" data-product="5">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 product-item" data-price="8943" data-discount="0" data-category="audio">
+                <div class="product-card h-100">
+                    <button class="wishlist-btn" data-product="5">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <img src="./assests/images/pic.jpg" class="product-image w-100" alt="FYLO M1">
+                    <div class="p-3">
+                        <div class="brand-name">BAG</div>
+                        <h5 class="product-title">Small Leather Bag</h5>
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="current-price">N 8,943</span>
+                            <span class="original-price ms-2">N 3,776</span>
+                        </div>
+                        <button class="btn add-to-cart" data-product="5">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart-summary d-none">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-total">N 0</span>
+        <span class="cart-count">0</span>
+    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
@@ -185,6 +326,200 @@
                 hideLightbox();
             }
         }
+
+        let cart = [];
+            let wishlist = [];
+            
+            
+            const productContainer = document.querySelector('.product-container');
+            const cartSummary = document.querySelector('.cart-summary');
+            const cartTotal = document.querySelector('.cart-total');
+            const cartCount = document.querySelector('.cart-count');
+            
+            
+            document.querySelectorAll('.quantity-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const productId = this.getAttribute('data-product');
+                    const input = document.querySelector(`.quantity-input[data-product="${productId}"]`);
+                    let value = parseInt(input.value);
+                    
+                    if (this.classList.contains('minus')) {
+                        if (value > 1) value--;
+                    } else {
+                        if (value < 10) value++;
+                    }
+                    
+                    input.value = value;
+                });
+            });
+            
+            document.querySelectorAll('.quantity-input').forEach(input => {
+                input.addEventListener('change', function() {
+                    let value = parseInt(this.value);
+                    if (isNaN(value)) value = 1;
+                    if (value < 1) value = 1;
+                    if (value > 10) value = 10;
+                    this.value = value;
+                });
+            });
+            document.querySelectorAll('.wishlist-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const productId = this.getAttribute('data-product');
+                    const icon = this.querySelector('i');
+                    
+                    if (wishlist.includes(productId)) {
+                        wishlist = wishlist.filter(id => id !== productId);
+                        icon.classList.remove('fas', 'active');
+                        icon.classList.add('far');
+                    } else {
+                        wishlist.push(productId);
+                        icon.classList.remove('far');
+                        icon.classList.add('fas', 'active');
+                    }
+                    
+                    updateWishlistCount();
+                });
+            });
+            
+            function updateWishlistCount() {
+                console.log('Wishlist items:', wishlist.length);
+            }
+            const priceFilter = document.querySelector('.price-filter');
+            const discountFilter = document.querySelector('.discount-filter');
+            const sortBy = document.querySelector('.sort-by');
+            const productSearch = document.querySelector('.product-search');
+            
+            [priceFilter, discountFilter, sortBy, productSearch].forEach(element => {
+                element.addEventListener('change', filterProducts);
+            });
+            
+            productSearch.addEventListener('input', filterProducts);
+            
+            function filterProducts() {
+                const priceRange = priceFilter.value;
+                const discountStatus = discountFilter.value;
+                const sortValue = sortBy.value;
+                const searchTerm = productSearch.value.toLowerCase();
+                
+                const products = Array.from(document.querySelectorAll('.product-item'));
+                if (priceRange !== 'all') {
+                    const [min, max] = priceRange === '50000+' ? 
+                        [50000, Infinity] : 
+                        priceRange.split('-').map(Number);
+                    
+                    products.forEach(product => {
+                        const price = parseInt(product.getAttribute('data-price'));
+                        const shouldShow = price >= min && price <= max;
+                        product.style.display = shouldShow ? 'block' : 'none';
+                    });
+                }
+                if (discountStatus !== 'all') {
+                    products.forEach(product => {
+                        const discount = parseInt(product.getAttribute('data-discount'));
+                        const shouldShow = 
+                            (discountStatus === 'discounted' && discount > 0) ||
+                            (discountStatus === 'nodiscount' && discount === 0);
+                        
+                        if (priceFilter.value === 'all') {
+                            product.style.display = shouldShow ? 'block' : 'none';
+                        } else {
+                            if (product.style.display !== 'none') {
+                                product.style.display = shouldShow ? 'block' : 'none';
+                            }
+                        }
+                    });
+                }
+                if (searchTerm) {
+                    products.forEach(product => {
+                        const title = product.querySelector('.product-title').textContent.toLowerCase();
+                        const shouldShow = title.includes(searchTerm);
+                        
+                        if (priceFilter.value === 'all' && discountFilter.value === 'all') {
+                            product.style.display = shouldShow ? 'block' : 'none';
+                        } else {
+                            if (product.style.display !== 'none') {
+                                product.style.display = shouldShow ? 'block' : 'none';
+                            }
+                        }
+                    });
+                }
+                if (sortValue !== 'default') {
+                    const visibleProducts = products.filter(p => p.style.display !== 'none');
+                    
+                    visibleProducts.sort((a, b) => {
+                        const priceA = parseInt(a.getAttribute('data-price'));
+                        const priceB = parseInt(b.getAttribute('data-price'));
+                        const discountA = parseInt(a.getAttribute('data-discount'));
+                        const discountB = parseInt(b.getAttribute('data-discount'));
+                        
+                        switch (sortValue) {
+                            case 'price-low':
+                                return priceA - priceB;
+                            case 'price-high':
+                                return priceB - priceA;
+                            case 'discount':
+                                return discountB - discountA;
+                            default:
+                                return 0;
+                        }
+                    });
+                    visibleProducts.forEach(product => {
+                        productContainer.appendChild(product);
+                    });
+                }
+                if (priceFilter.value === 'all' && discountFilter.value === 'all' && !searchTerm) {
+                    products.forEach(product => {
+                        product.style.display = 'block';
+                    });
+                }
+            }
+            document.querySelectorAll('.add-to-cart').forEach(button => {
+                button.addEventListener('click', function() {
+                    const productId = this.getAttribute('data-product');
+                    const productCard = this.closest('.product-item');
+                    const productName = productCard.querySelector('.product-title').textContent;
+                    const productPrice = parseInt(productCard.getAttribute('data-price'));
+                    const quantity = parseInt(productCard.querySelector('.quantity-input').value);
+                    const discount = parseInt(productCard.getAttribute('data-discount'));
+                    const existingItem = cart.find(item => item.id === productId);
+                    
+                    if (existingItem) {
+                        existingItem.quantity += quantity;
+                    } else {
+                        cart.push({
+                            id: productId,
+                            name: productName,
+                            price: productPrice,
+                            quantity: quantity,
+                            discount: discount
+                        });
+                    }
+                    
+                    updateCart();
+                    alert(`Added to cart: ${quantity}x ${productName}\nPrice: N ${(productPrice * quantity).toLocaleString()}`);
+                });
+            });
+            
+            function updateCart() {
+                const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+                const totalAmount = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+                
+                if (totalItems > 0) {
+                    cartSummary.classList.remove('d-none');
+                    cartCount.textContent = totalItems;
+                    cartTotal.textContent = `N ${totalAmount.toLocaleString()}`;
+                } else {
+                    cartSummary.classList.add('d-none');
+                }
+                localStorage.setItem('cart', JSON.stringify(cart));
+            }
+            if (localStorage.getItem('cart')) {
+                cart = JSON.parse(localStorage.getItem('cart'));
+                updateCart();
+            }
+            cartSummary.addEventListener('click', function() {
+                alert(`You have ${cart.reduce((sum, item) => sum + item.quantity, 0)} items in your cart.\nTotal: N ${cart.reduce((sum, item) => sum + (item.price * item.quantity), 0).toLocaleString()}`);
+            });
     </script>
 </body>
 </html>
