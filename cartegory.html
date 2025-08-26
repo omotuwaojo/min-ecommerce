@@ -1,21 +1,59 @@
 <!DOCTYPE html>
 <html lang="en-US" class="js" style="--flatsome--header--sticky-height: 110px;">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bag – MIN</title>
-    
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-     <link rel="stylesheet" href="cartegory.css">
-    <style>
-        /* Custom styles */
-        
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- Custom CSS Styles -->
+    <link rel="stylesheet" href="./assests/css/style.css" />
+    <link rel="stylesheet" href="./assests/css/home.css">
 </head>
+
 <body>
+
+    <!-- Header -->
+    <header class="bg-primary text-white py-2 sticky-top shadow-sm mb-3 ">
+        <div class="container d-flex align-items-center justify-content-between flex-wrap">
+            <div class="d-flex align-items-center">
+                <button class="btn btn-light d-lg-none me-2" id="hamburger"><i class="fas fa-bars"></i></button>
+                <a href="#">
+                    <h3 class="mb-0 fw-bold text-white text-decoration-none">Market<span class="text-warning">kit</span>
+                    </h3>
+                </a>
+            </div>
+            <br><br>
+            <nav class="d-none d-lg-flex gap-4 align-items-center">
+                <i class=""></i></a>
+                <a href="#"><i class="fas fa-store"></i></a>
+                <a href="#"><i class="fas fa-file"></i></a>
+                <a href="#"><i class="fas fa-blog"></i></a>
+            </nav>
+            <form class="d-flex align-items-center flex-grow-1 mx-3">
+                <input class="form-control me-2" type="search" placeholder="Search for items…" />
+                <button class="btn btn-dark" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <div class="d-flex align-items-center gap-3">
+                <a href="#" class="text-white text-decoration-none"><i class="fas fa-user"></i> Login/Register</a>
+                <a href="#" id="cart-icon" class="text-white position-relative">
+                    <i class="fas fa-shopping-cart fa-lg"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-danger rounded-circle"
+                        id="cart-count">0</span>
+                </a>
+                <button class="btn btn-outline-light" id="toggle-theme"><i class="fas fa-moon"></i></button>
+            </div>
+        </div>
+    </header>
+
     <!-- Main Content -->
     <main id="main" class="py-4">
         <div class="container">
@@ -27,11 +65,12 @@
                         <li class="breadcrumb-item active" aria-current="page">Bag</li>
                     </ol>
                 </nav>
-                
+
                 <div class="d-flex justify-content-between align-items-center">
                     <h1 class="mb-1">Bag</h1>
                     <div class="dropdown">
-                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="sortDropdown" data-bs-toggle="dropdown">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="sortDropdown"
+                            data-bs-toggle="dropdown">
                             Default sorting
                         </button>
                         <ul class="dropdown-menu">
@@ -44,7 +83,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Products Grid -->
             <div class="row">
                 <!-- Product 1 -->
@@ -52,7 +91,8 @@
                     <div class="card product-card h-100">
                         <div class="product-image position-relative">
                             <a href="#">
-                                <img src="https://minstores.com/wp-content/uploads/2020/11/3-copy-1-800x800.jpg" class="card-img-top" alt="3-Way Black Sling Bag">
+                                <img src="https://minstores.com/wp-content/uploads/2020/11/3-copy-1-800x800.jpg"
+                                    class="card-img-top" alt="3-Way Black Sling Bag">
                             </a>
                         </div>
                         <div class="card-body">
@@ -68,18 +108,21 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Product 2 -->
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card product-card h-100">
                         <div class="product-image position-relative">
                             <a href="#">
-                                <img src="https://img.kwcdn.com/product/1e78ea2a66/c6093a58-5e47-4bd1-8d39-14a92b8e7ff0_800x800.jpeg?imageView2/2/w/800/q/70/format/webp" class="card-img-top" alt="LUMG Men's Casual Business Backpack - Dark Gray Geometric Pattern">
+                                <img src="https://img.kwcdn.com/product/1e78ea2a66/c6093a58-5e47-4bd1-8d39-14a92b8e7ff0_800x800.jpeg?imageView2/2/w/800/q/70/format/webp"
+                                    class="card-img-top"
+                                    alt="LUMG Men's Casual Business Backpack - Dark Gray Geometric Pattern">
                             </a>
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">
-                                <a href="#" class="text-decoration-none">LUMG Men's Casual Business Backpack - Dark Gray Geometric Pattern</a>
+                                <a href="#" class="text-decoration-none">LUMG Men's Casual Business Backpack - Dark Gray
+                                    Geometric Pattern</a>
                             </h5>
                             <div class="price">
                                 <del>RM199.00</del> <ins>RM139.00</ins>
@@ -90,13 +133,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Product 3 -->
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card product-card h-100">
                         <div class="product-image position-relative">
                             <a href="#">
-                                <img src="https://img.kwcdn.com/product/open/2024-10-08/1728396713145-f3225bf9dcb1459ab66f7080636d1c38-goods.jpeg?imageView2/2/w/800/q/70/format/webp" class="card-img-top" alt="Large Capacity Travel Bag for Men">
+                                <img src="https://img.kwcdn.com/product/open/2024-10-08/1728396713145-f3225bf9dcb1459ab66f7080636d1c38-goods.jpeg?imageView2/2/w/800/q/70/format/webp"
+                                    class="card-img-top" alt="Large Capacity Travel Bag for Men">
                             </a>
                         </div>
                         <div class="card-body">
@@ -112,18 +156,20 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Product 4 -->
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card product-card h-100">
                         <div class="product-image position-relative">
                             <a href="#">
-                                <img src="https://loveluxury.co.uk/shop/wp-content/uploads/2024/06/Hermes-Kelly-Cut-Epsom-Rose-Confetti-Palladium-Hardware-2-900x600.jpg" class="card-img-top" alt="Hermès Kelly Cut Epsom Rose Confetti Palladium Hardware">
+                                <img src="https://loveluxury.co.uk/shop/wp-content/uploads/2024/06/Hermes-Kelly-Cut-Epsom-Rose-Confetti-Palladium-Hardware-2-900x600.jpg"
+                                    class="card-img-top" alt="Hermès Kelly Cut Epsom Rose Confetti Palladium Hardware">
                             </a>
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">
-                                <a href="#" class="text-decoration-none">Hermès Kelly Cut Epsom Rose Confetti Palladium Hardware</a>
+                                <a href="#" class="text-decoration-none">Hermès Kelly Cut Epsom Rose Confetti Palladium
+                                    Hardware</a>
                             </h5>
                             <div class="price">
                                 <del>RM199.00</del> <ins>RM139.00</ins>
@@ -134,13 +180,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Product 5 -->
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card product-card h-100">
                         <div class="product-image position-relative">
                             <a href="#">
-                                <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/0cc6612de3e18bf5af0bf53db7b1ba8f.jpg?imageView2/2/w/800/q/70/format/webp" class="card-img-top" alt="Men's USB Charging Laptop Backpack">
+                                <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/0cc6612de3e18bf5af0bf53db7b1ba8f.jpg?imageView2/2/w/800/q/70/format/webp"
+                                    class="card-img-top" alt="Men's USB Charging Laptop Backpack">
                             </a>
                         </div>
                         <div class="card-body">
@@ -156,13 +203,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Product 6 -->
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card product-card h-100">
                         <div class="product-image position-relative">
                             <a href="#">
-                                <img src="https://img01.ztat.net/article/spp-media-p1/b4b54ef0b0b13746b9ddfee20cfee5c3/4cf830c17d874ae994882dffb6df3a5f.jpg" class="card-img-top" alt="Valentino Bags SUPERMAN Handbag">
+                                <img src="https://img01.ztat.net/article/spp-media-p1/b4b54ef0b0b13746b9ddfee20cfee5c3/4cf830c17d874ae994882dffb6df3a5f.jpg"
+                                    class="card-img-top" alt="Valentino Bags SUPERMAN Handbag">
                             </a>
                         </div>
                         <div class="card-body">
@@ -180,99 +228,107 @@
                 </div>
 
                 <!-- Product 7 -->
-                    <div class="col-md-4 col-sm-6 mb-4">
-                        <div class="card product-card h-100">
-                            <div class="product-image position-relative">
-                                <a href="#">
-                                    <img src="https://m.media-amazon.com/images/I/61P0gXmzv4L._AC_SL1500_.jpg" class="card-img-top" alt="Lemuvlt Small Crossbody Bag for Men">
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    <a href="#" class="text-decoration-none">Lemuvlt Small Crossbody Bag for Men</a>
-                                </h5>
-                                <div class="price">
-                                    <del>RM269.00</del> <ins>RM189.00</ins>
-                                </div>
-                            </div>
-                            <div class="card-footer bg-transparent">
-                                <a href="#" class="btn btn-dark w-100">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Product 8 -->
-                    <div class="col-md-4 col-sm-6 mb-4">
-                        <div class="card product-card h-100">
-                            <div class="product-image position-relative">
-                                <a href="#">
-                                    <img src="https://tommy-europe.scene7.com/is/image/TommyEurope/AM0AM13069_BDS_main?$b2c_uplp_listing_2560$" class="card-img-top" alt="Men's Backpacks Laptop Leather Backpacks Tommy Hilfiger">
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    <a href="#" class="text-decoration-none">Men's Backpacks Laptop Leather Backpacks Tommy Hilfiger</a>
-                                </h5>
-                                <div class="price">
-                                    <del>RM269.00</del> <ins>RM189.00</ins>
-                                </div>
-                            </div>
-                            <div class="card-footer bg-transparent">
-                                <a href="#" class="btn btn-dark w-100">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Product 9 -->
-                    <div class="col-md-4 col-sm-6 mb-4">
-                        <div class="card product-card h-100">
-                            <div class="product-image position-relative">
-                                <a href="#">
-                                    <img src="https://img01.ztat.net/article/spp-media-p1/2d8d096731993273ba7042d67be5aa6c/b5fa67d48b8b4e43bb8399e02405f2b1.jpg?imwidth=600&filter=packshot" class="card-img-top" alt="Valentino Bags LIUTO Tote bag">
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    <a href="#" class="text-decoration-none">Valentino Bags LIUTO Tote bag</a>
-                                </h5>
-                                <div class="price">
-                                    <del>RM269.00</del> <ins>RM189.00</ins>
-                                </div>
-                            </div>
-                            <div class="card-footer bg-transparent">
-                                <a href="#" class="btn btn-dark w-100">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Product 10 -->
-                    <div class="col-md-4 col-sm-6 mb-4">
-                        <div class="card product-card h-100">
-                            <div class="product-image position-relative">
-                                <a href="#">
-                                    <img src="https://www.francescolionetti.eu/wp-content/uploads/2022/03/MENS-BAG-BORSELLO-SMALL-Product-code_-FL1009-BLACK1-scaled.jpg" class="card-img-top" alt="Leather Men s Bag Auriga Small Made in Italy Francesco Lionetti">
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    <a href="#" class="text-decoration-none">Leather Men's Bag Auriga Small Made in Italy Francesco Lionetti</a>
-                                </h5>
-                                <div class="price">
-                                    <del>RM269.00</del> <ins>RM189.00</ins>
-                                </div>
-                            </div>
-                            <div class="card-footer bg-transparent">
-                                <a href="#" class="btn btn-dark w-100">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-
-                     <!-- Product 11 -->
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card product-card h-100">
                         <div class="product-image position-relative">
                             <a href="#">
-                                <img src="https://coach.scene7.com/is/image/Coach/cz396_qbmi5_a0?$mobileProductTile$" class="card-img-top" alt="Men's Bags Sale COACH Outlet">
+                                <img src="https://m.media-amazon.com/images/I/61P0gXmzv4L._AC_SL1500_.jpg"
+                                    class="card-img-top" alt="Lemuvlt Small Crossbody Bag for Men">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="#" class="text-decoration-none">Lemuvlt Small Crossbody Bag for Men</a>
+                            </h5>
+                            <div class="price">
+                                <del>RM269.00</del> <ins>RM189.00</ins>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="#" class="btn btn-dark w-100">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card product-card h-100">
+                        <div class="product-image position-relative">
+                            <a href="#">
+                                <img src="https://tommy-europe.scene7.com/is/image/TommyEurope/AM0AM13069_BDS_main?$b2c_uplp_listing_2560$"
+                                    class="card-img-top" alt="Men's Backpacks Laptop Leather Backpacks Tommy Hilfiger">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="#" class="text-decoration-none">Men's Backpacks Laptop Leather Backpacks Tommy
+                                    Hilfiger</a>
+                            </h5>
+                            <div class="price">
+                                <del>RM269.00</del> <ins>RM189.00</ins>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="#" class="btn btn-dark w-100">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card product-card h-100">
+                        <div class="product-image position-relative">
+                            <a href="#">
+                                <img src="https://img01.ztat.net/article/spp-media-p1/2d8d096731993273ba7042d67be5aa6c/b5fa67d48b8b4e43bb8399e02405f2b1.jpg?imwidth=600&filter=packshot"
+                                    class="card-img-top" alt="Valentino Bags LIUTO Tote bag">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="#" class="text-decoration-none">Valentino Bags LIUTO Tote bag</a>
+                            </h5>
+                            <div class="price">
+                                <del>RM269.00</del> <ins>RM189.00</ins>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="#" class="btn btn-dark w-100">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card product-card h-100">
+                        <div class="product-image position-relative">
+                            <a href="#">
+                                <img src="https://www.francescolionetti.eu/wp-content/uploads/2022/03/MENS-BAG-BORSELLO-SMALL-Product-code_-FL1009-BLACK1-scaled.jpg"
+                                    class="card-img-top"
+                                    alt="Leather Men s Bag Auriga Small Made in Italy Francesco Lionetti">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="#" class="text-decoration-none">Leather Men's Bag Auriga Small Made in Italy
+                                    Francesco Lionetti</a>
+                            </h5>
+                            <div class="price">
+                                <del>RM269.00</del> <ins>RM189.00</ins>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="#" class="btn btn-dark w-100">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card product-card h-100">
+                        <div class="product-image position-relative">
+                            <a href="#">
+                                <img src="https://coach.scene7.com/is/image/Coach/cz396_qbmi5_a0?$mobileProductTile$"
+                                    class="card-img-top" alt="Men's Bags Sale COACH Outlet">
                             </a>
                         </div>
                         <div class="card-body">
@@ -289,12 +345,13 @@
                     </div>
                 </div>
 
-                 <!-- Product 12 -->
+                <!-- Product 12 -->
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card product-card h-100">
                         <div class="product-image position-relative">
                             <a href="#">
-                                <img src="https://n.nordstrommedia.com/it/c9d0ff30-de01-49ee-baca-02a4297803c6.jpeg?h=365&w=240&dpr=2" class="card-img-top" alt="Men's Backpacks Nordstrom">
+                                <img src="https://n.nordstrommedia.com/it/c9d0ff30-de01-49ee-baca-02a4297803c6.jpeg?h=365&w=240&dpr=2"
+                                    class="card-img-top" alt="Men's Backpacks Nordstrom">
                             </a>
                         </div>
                         <div class="card-body">
@@ -314,14 +371,66 @@
         </div>
 
     </main>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container text-center mb-5">
+            <h4 class="fw-bold mb-3">Subscribe to our Newsletter</h4>
 
-   
+            <form class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+                <input type="email" class="form-control w-100 w-md-50" placeholder="Enter your email" required>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                <button type="submit" class="btn btn-outline-primary px-4">
+                    Subscribe
+                </button>
 
-<!-- Font Awesome for icons -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+                <a href="mailto:calebdainitife@gmail.com"
+                    class="btn btn-outline-primary d-inline-flex align-items-center gap-2 px-4 py-2 fw-semibold shadow-sm">
+                    <i class="bi bi-envelope"></i> Email Us
+                </a>
+            </form>
+        </div>
+
+        <div
+            class="container border-top pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+            <!-- Logo -->
+            <div class="mb-4 mb-md-0">
+                <a href="index.html" class="text-white fw-bold fs-3 text-decoration-none">
+                    Market<span class="text-warning">kit</span>
+                </a>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="mb-4 mb-md-0">
+                <h6 class="fw-bold mb-3">Quick Links</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="footer-link">Shop</a></li>
+                    <li><a href="#" class="footer-link">Contact</a></li>
+                    <li><a href="#" class="footer-link">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Icons -->
+            <div>
+                <h6 class="fw-bold mb-3">Follow Us</h6>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Bootstrap JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+
+    <!-- Font Awesome for icons -->
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
 
 </body>
+
 </html>
